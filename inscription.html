@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1 class="neon-text">Tricky Fam</h1>
+        <nav class="menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="chat.html">Chat</a></li>
+                <li><a href="guides.html">Guides</a></li>
+                <li><a href="about.html">About Xiu</a></li>
+                <li><a href="#" id="openRegister">Créer un compte</a></li> <!-- Ouvrir le formulaire d'inscription -->
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Ajoutez un lien pour ouvrir la pop-up -->
+<a href="#" id="register-link">Créer un compte</a>
+
+<!-- Ajoutez la div de la pop-up (masquée initialement) -->
+<div class="modal" id="register-modal">
+    <div class="modal-content">
+        <!-- Contenu du formulaire d'inscription -->
+        <span class="close" id="close-register">&times;</span>
+        <form action="" class="inscription-form">
+            <h1>S'inscrire</h1>
+            <div class="inputbox">
+                <input type="text" placeholder="Nom" required>
+                <img class="risky" src=""/>
+            </div>
+            <!-- Autres champs du formulaire -->
+            <button type="submit" class="sub">S'inscrire</button>
+        </form>
+    </div>
+</div>
+
+
+    <footer class="footer neon-text">
+        <p>&copy; 2024 Neon Gaming. All rights reserved.</p>
+    </footer>
+
+    <script src="inscription.js" defer></script>
+</body>
+</html>

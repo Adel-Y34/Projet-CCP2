@@ -1,0 +1,469 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: #fff;
+}
+
+header {
+    background-color: #222;
+    padding: 20px;
+    text-align: center;
+    background-color: rgba(169, 49, 206, 0.11);
+    border-top: 1px solid rgba(195, 0, 255, 0.726);
+    border-bottom: 1px solid rgba(195, 0, 255, 0.726);
+    backdrop-filter: blur(10px); /* Effet de flou pour donner un aspect transparent */
+    -webkit-backdrop-filter: blur(10px); /* Préfixe pour certains navigateurs */
+}
+
+/* Styles pour la modal */
+.modal {
+    display: none; /* Masquez la modal par défaut */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.5); /* Fond sombre semi-transparent */
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+h1 {
+    margin-bottom: 20px;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ff0;
+}
+
+main {
+    padding: 20px;
+}
+
+.footer {
+    text-align: center;
+    padding: 20px;
+}
+
+/* Neon effect */
+.neon-text {
+    color: #fff;
+    text-shadow: 0 0 10px #ff0, 0 0 20px #ff0, 0 0 30px #ff0, 0 0 40px #f08, 0 0 70px #f08, 0 0 80px #f08, 0 0 100px #f08, 0 0 150px #f08;
+}
+.neon-text-center {
+    color: #fff;
+    text-shadow: 0 0 10px #ff0, 0 0 20px #ff0, 0 0 30px #ff0, 0 0 40px #f08, 0 0 70px #f08, 0 0 80px #f08, 0 0 100px #f08, 0 0 150px #f08;
+    text-align: center;
+}
+
+.neon-text1 {
+    color: #fff;
+    text-shadow: 0 0 10px #ff0, 0 0 20px #ff0, 0 0 30px #ff0, 0 0 40px #f08, 0 0 70px #f08, 0 0 80px #f08, 0 0 100px #f08, 0 0 150px #f08;
+}
+.neon-text-center1 {
+    color: #fff;
+    text-shadow: 0 0 10px #ff0, 0 0 20px #ff0, 0 0 30px #ff0, 0 0 40px #f08, 0 0 70px #f08, 0 0 80px #f08, 0 0 100px #f08, 0 0 150px #f08;
+    text-align: center;
+}
+
+.neon-vertical-divider {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    z-index: 1000;
+    background: linear-gradient(to bottom, #ff00ff, #00ffff, #ff00ff); /* Dégradé vertical */
+}
+
+.neon-vertical-divider1 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 1px;
+    height: 100%;
+    z-index: 1000;
+    background: linear-gradient(to bottom, #ff00ff, #00ffff, #ff00ff); /* Dégradé vertical */
+}
+
+.neon-vertical-divider6 {
+    position: absolute;
+    top: 0px;
+    left: 66%; /* Ajustez la position en fonction de vos besoins */
+    transform: translateX(-50%);
+    height: calc(100vh - 0px); /* 60px est la hauteur de votre header */
+    max-height: calc(100vh - 0px); /* Nouvelle ligne pour définir une hauteur maximale */
+    width: 2px;
+    z-index: 999; /* Augmentez le z-index pour placer la bordure derrière le header */
+    background: linear-gradient(to bottom, #ff00ff, #00ffff, #ff00ff); /* Dégradé vertical */
+}
+
+.content1 {
+    display: flex;
+}
+
+.guides {
+    flex: 1; /* Le contenu des guides occupe l'espace restant */
+    /* border-right-color: linear-gradient(to bottom, #ff00ff, #00ffff, #ff00ff); */
+    border-image: linear-gradient(#ff00ff, #00ffff, #ff00ff) 30;
+    border-width: 2px;
+    border-style: solid;
+    height: 1000px;
+    border-left: hidden;
+    border-top: hidden;
+    border-bottom: hidden;
+    
+}
+
+.guide-blocks {
+    flex-shrink: 0; /* Empêche le rétrécissement du bloc de guides */
+    width: 420px; /* Définissez la largeur de votre bloc de guides */
+    /* border-left: linear-gradient(to bottom, #ff00ff, #00ffff, #ff00ff) 1; */
+    padding-left: 20px; /* Ajoute un peu d'espacement à droite de la bordure */
+    margin-right: 10px;
+    
+}
+
+header {
+    
+    position: relative; /* Assurez-vous que le header est positionné de manière relative */
+    z-index: 1000; /* Assurez-vous que le header est au-dessus de la bordure */
+}
+
+footer {
+    position: relative;
+    z-index: 1000; /* Assurez-vous que le footer est au-dessus de la bordure */
+}
+
+.neon-text-color-pink {
+    color: #ff00ff;
+    text-align: center;
+
+}
+.neon-text-color-blue {
+    color: #00ffff;
+    text-align: center;
+
+}
+
+/* Menu burger */
+.menu-icon {
+    display: none;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+}
+
+.menu ul {
+    display: flex;
+    list-style: none;
+}
+
+.menu ul li {
+    margin-right: 20px;
+}
+
+.neon-divider {
+    border: none;
+    background: linear-gradient(to right, #ff00ff, #00ffff, #ff00ff); /* Dégradé de couleurs */
+    height: 2px; /* Épaisseur du trait */
+    border-radius: 1px; /* Pour arrondir légèrement les bords */
+    margin-top: 20px; /* Espacement entre le trait et le contenu */
+    margin-bottom: 20px; /* Espacement entre le trait et le contenu */
+}
+
+#footer {
+    display: none;
+    animation: slideInFromBottom 0.5s ease-in-out forwards;
+}
+
+.guide-section {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Centrer verticalement les éléments */
+    text-align: center;
+
+}
+
+.video-container {
+    flex: 1; /* La vidéo prendra 50% de l'espace */
+    margin-right: 20px; /* Espacement entre la vidéo et le texte */
+    display: flex; /* Utilisation de flexbox pour aligner l'image */
+    justify-content: center; /* Centrer horizontalement l'image */
+    align-items: center; /* Centrer verticalement l'image */
+    width: 100%; /* Assure que le conteneur prend 100% de la largeur disponible */
+    height: 100%; /* Assure que le conteneur prend 100% de la hauteur disponible */
+}
+
+.text-container {
+    flex: 1; /* Le texte prendra 50% de l'espace */
+    
+}
+
+.guide-title {
+    text-align: center; /* Centrer le titre */
+}
+
+.guide-description {
+    text-align: justify; /* Justifier le texte */
+}
+
+.neon-border {
+    border: 4px solid #ff69b4;
+    background-color: rgba(255, 182, 193, 0.103);
+    padding: 20px;
+    height: auto;
+    margin: auto;
+}
+.neon-border-blue {
+    border: 2px solid aquamarine;
+    background-color: rgba(182, 255, 251, 0.103);
+    width: 11%;
+    height: auto;
+    margin: auto;
+}
+
+.guide-section2 {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+}
+
+
+
+
+@keyframes slideInFromBottom {
+    0% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideOutToBottom {
+    100% {transform: translateY(0);
+    opacity: 1;
+    }
+    0% {
+        transform: translateY(100%);
+        opacity: 1;
+    }
+
+}
+
+.guide-start {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+
+/* Media query pour le mode responsive */
+@media only screen and (max-width: 768px) {
+    .menu-icon {
+        display: block;
+        cursor: pointer;
+    }
+
+    .menu ul {
+        display: none;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: #222;
+        padding: 10px;
+        box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    }
+
+    .menu ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .menu ul li a {
+        color: #fff;
+        text-decoration: none;
+    }
+
+    #menu-toggle:checked + .menu ul {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.footer {
+    text-align: center; /* Pour aligner le texte au centre horizontalement */
+    position: fixed; /* Pour positionner le footer de manière fixe */
+    bottom: 0; /* Pour le placer au bas de la fenêtre */
+    width: 100%; /* Pour occuper toute la largeur de la fenêtre */
+    background-color: #222; /* Couleur de fond du footer */
+    padding: 20px; /* Espacement autour du texte */
+    background-color: rgba(169, 49, 206, 0.11);
+    border-top: 1px solid rgba(195, 0, 255, 0.726);
+    backdrop-filter: blur(10px); /* Effet de flou pour donner un aspect transparent */
+    -webkit-backdrop-filter: blur(10px); /* Préfixe pour certains navigateurs */
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 67vh; /* Pour centrer verticalement */
+    margin: 0;
+    position: relative;
+    top: 50%;
+    
+}
+.b1 {
+    text-align: center;
+    
+}
+
+.b1 .imrisky {
+    background: url('img/images\ \(6\).jpg');
+    background-position: center;
+    background-size: 60%;
+}
+
+.b1 {
+    width: 420px;
+    background: rgb(184, 187, 187);
+    color: aliceblue;
+    background: transparent;
+    
+}
+
+.b1 h1 {
+    font-size: 36px;
+    text-align: center;
+    color: rgba(255, 110, 212, 0.384);
+}
+
+.b1 .inputbox {
+    
+    width: 100%;
+    height: 50px;
+    background: rgba(238, 127, 179, 0.384);
+    margin: 16px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.inputbox input {
+    border-radius: 0px;
+    width: 415px;
+    height: 40px;
+    padding: 5px;
+    
+
+
+}
+input{
+    border:none;
+    background-color:transparent
+}
+
+.inputbox input::placeholder {
+    color: rgb(255, 147, 241)
+}
+
+.b1 .souvenir {
+    display: flex;
+    justify-content: space-between;
+    color: rgba(248, 127, 238, 0.548);
+
+}
+
+.inputbox .risky {
+    position: absolute;
+    right: 5px;
+   
+}
+
+.b1 .souvenir {
+    display: flex;
+    justify-content: space-between;
+}
+
+.b1 .sub {
+    width: 420px;
+    height: 40px;
+    box-shadow: rgb(0, 0, 0);
+    border-radius: 1%;
+    cursor: pointer;
+}
+
+.b1 .reglink {
+    font-size: 20px;
+    text-decoration: rgba(231, 141, 212, 0.418);
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+}
+
+.reglink1 {
+    font-size: 20px;
+    text-decoration: rgba(231, 141, 212, 0.418);
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+}
+
+.reglink1 p a:hover {
+    text-decoration: underline;
+}
+
+.reglink p a:hover {
+    text-decoration: underline;
+}
+
